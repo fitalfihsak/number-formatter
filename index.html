@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Simple Number Format</title>
+</head>
+
+<body>
+<input type="text" id="emp" maxlength="9" />
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
+<script type="text/javascript" src="http://sms.ranglerz.com/js/formatter.js"></script> 
+<script type="text/javascript">
+	var empNo = document.getElementById('emp');
+    if (empNo) {
+		new Formatter(empNo, {
+            'pattern': '{{999}}-{{999}}-{{999}}'
+        });
+    }
+</script>
+</body>
+</html>
